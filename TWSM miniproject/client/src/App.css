@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Press+Start+2P&display=swap');
+
+body {
+  align-content: center;
+  padding: 10px;
+  color: #E1DEE3;
+  background:
+          linear-gradient(to right, #272727 1px, transparent 1px) 100px 100px/100px 100px repeat,
+          linear-gradient(to bottom, #272727 1px, transparent 1px) 100px 100px/100px 100px repeat,
+          linear-gradient(0.0turn, #0d0d0d, #1F1F1F, #0d0d0d) no-repeat;
+}
+/*https://www.w3schools.com/cssref/css3_pr_background.asp*/
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 8px;
+  float: left;
+  color: #FAF9F9; /*9A031E*/
+  position: relative;
+  top: 40px;
+  font-size: 76px;
+  line-height: 140px;
+}
+
+h2 {
+  font-family: Consolas, monospace;
+  padding-top: 3%;
+  font-size: xx-large;
+}
+
+.header {
+  position: relative;
+  left: 5%;
+  padding-top: 2%;
+}
+
+p {
+  font-family: Consolas, monospace;
+  margin-right: 15%;
+  margin-left: 15%;
+  line-height: 20px;
+}
+
+.highlight{
+  color: #5AFF15 ;
+}
+
+input {
+  width: 50%;
+  background: black;
+  padding: 1%;
+  font-family: Consolas, monospace;
+  line-height: 20px;
+  border: 2px solid #323031;
+  color: #FAF9F9;
+  font-size: 14px;
+  margin: 8px 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus, input[type=textarea]:focus {
+  border: 2px solid #FAF9F9;
+
+}
+
+input[type=textarea] {
+  height: 150px;
+  resize: none;
+  vertical-align: top;
+}
+
+button {
+  background-color: #B30089;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  border: none;
+  color: #FAF9F9;
+  padding: 12px 24px;
+  text-decoration: none;
+  margin: 8px 2px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+button:hover{
+  background: #ED33B9;
+}
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #B30089;
+  color: #FAF9F9;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  margin: auto;
+  right: 5%;
+  font-size: 18px;
+  font-family: 'Orbitron', sans-serif;
+  z-index: 1000;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #FAF9F9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ED33B9;
+  color: #FAF9F9;
+  text-decoration: none;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+video {
+  border-radius: 20px;
+  position: relative;
+  top: 100px;
+}
+
+.about {
+  text-align: left;
+
+}
+
+.aboutColumn {
+  float: left;
+  width: 50%;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* For image gallery: */
+.container {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.2;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: #FAF9F9;
+  font-size: 16px;
+  font-family: Consolas, monospace;;
+  padding: 16px 32px;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #323031;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FAF9F9;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
